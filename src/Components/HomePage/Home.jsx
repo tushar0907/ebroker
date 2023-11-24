@@ -368,12 +368,12 @@ const HomePage = () => {
                           <div className="headtag">
                             <div className="advertise">
                               <span className="subhead1">
-                                Lead generation Made easy
+                                Leads generation without Boarders{" "}
                               </span>
 
                               <span className="subhead2">
-                                Trusted partner for real Estate Agents and
-                                Investors
+                                The first ever Robotic Sales funnel for
+                                Freelance Real Estate Professionals
                               </span>
                             </div>
                           </div>
