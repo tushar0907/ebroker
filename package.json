@@ -1,5 +1,5 @@
 {
-  "name": "e-broker",
+  "name": "propertichecker",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "homepage": "https://ebrokerweb.wrteam.me/",
+  "homepage": "https://www.propertichecker.com/",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.11.1",

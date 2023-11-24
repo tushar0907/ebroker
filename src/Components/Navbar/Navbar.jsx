@@ -176,58 +176,38 @@ const Nav = () => {
                                         </Link>
                                     </li>
                                     <Dropdown>
-                                        <Dropdown.Toggle id="dropdown-basic">{translate("properties")}</Dropdown.Toggle>
-
-                                        <Dropdown.Menu>
-                                            <Dropdown.Item>
-                                                <Link href="/properties/all-properties/">{translate("allProperties")}</Link>
-                                            </Dropdown.Item>
-                                            <Dropdown.Item>
-                                                <Link href="/featured-properties">{translate("featuredProp")}</Link>
-                                            </Dropdown.Item>
-                                            <Dropdown.Item>
-                                                {" "}
-                                                <Link href="/most-viewed-properties">{translate("mostViewedProp")}</Link>
-                                            </Dropdown.Item>
-                                            <Dropdown.Item>
-                                                {" "}
-                                                <Link href="/properties-nearby-city">{translate("nearbyCities")}</Link>
-                                            </Dropdown.Item>
-                                            <Dropdown.Item>
-                                                <Link href="/mostfav-properties">{translate("mostFavProp")}</Link>
-                                            </Dropdown.Item>
-                                            {/* <Dropdown.Item><Link href="/listby-agents"></Link>{translate("listByAgents")}</Dropdown.Item> */}
-                                        </Dropdown.Menu>
+                                        <Dropdown.Toggle id="dropdown-basic">Rent</Dropdown.Toggle>
                                     </Dropdown>
                                     <Dropdown>
-                                        <Dropdown.Toggle id="dropdown-basic">{translate("pages")}</Dropdown.Toggle>
-
-                                        <Dropdown.Menu>
-                                            <Dropdown.Item>
-                                                <Link href="/subscription-plan">{translate("subscriptionPlan")}</Link>
-                                            </Dropdown.Item>
-                                            <Dropdown.Item>
-                                                {" "}
-                                                <Link href="/articles">{translate("articles")}</Link>
-                                            </Dropdown.Item>
-                                            <Dropdown.Item onClick={handleOpenAcModal}>{translate("areaConverter")}</Dropdown.Item>
-                                            <Dropdown.Item>
-                                                <Link href="/terms&condition">{translate("terms&condition")}</Link>
-                                            </Dropdown.Item>
-                                            <Dropdown.Item>
-                                                {" "}
-                                                <Link href="/privacy-policy">{translate("privacyPolicy")}</Link>
-                                            </Dropdown.Item>
-                                        </Dropdown.Menu>
+                                        <Dropdown.Toggle id="dropdown-basic">Sell</Dropdown.Toggle>
                                     </Dropdown>
-                                    <Link href="/contact-us" id="a-tags-link">
-                                        <li className="nav-item nav-link">{translate("contactUs")}</li>
+                                    <Link href="/" id="a-tags-link">
+                                        <li className="nav-item nav-link">Airbnb</li>
                                     </Link>
                                     <li className="nav-item">
+                                        <Link className="nav-link" href="/">
+                                        Off Plan
+                                        </Link>
+                                    </li>
+                                    <Link href="/" id="a-tags-link">
+                                        <li className="nav-item nav-link">Commercial</li>
+                                    </Link>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" href="/">
+                                        Agent List
+                                        </Link>
+                                    </li>
+                                    <Link href="/" id="a-tags-link">
+                                        <li className="nav-item nav-link">Mortgages</li>
+                                    </Link>
+                                    {/* <li className="nav-item">
                                         <Link className="nav-link" href="/about-us">
                                             {translate("aboutUs")}
                                         </Link>
                                     </li>
+                                    <Link href="/contact-us" id="a-tags-link">
+                                        <li className="nav-item nav-link">{translate("contactUs")}</li>
+                                    </Link> */}
                                 </ul>
                             </div>
                         </div>

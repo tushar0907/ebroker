@@ -931,7 +931,6 @@ body {
 }
 #language {
   width: 5vw !important;
-  background-color: red;
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
@@ -1024,38 +1023,62 @@ body {
   /* direction: ltr; */
 }
 
-.headtag{
+.headtag {
   display: flex;
-  width: 77%;
+  width: 75%;
   justify-content: center;
   font-family: var(--primary-font);
   font-weight: 600;
-  height: 16vh;
+  height: 20vh;
   color: white;
   margin-top: 90px;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: 300px;
 }
 
-.advertise{
+@media (max-width: 767px) {
+  .headtag {
+    width: 90%; /* Adjust the width for smaller screens if needed */
+  }
+}
+
+.advertise {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: 14vh;
+  width: 70%;
+  min-height: 10vh; /* Set a minimum height to avoid very small sizes */
+  max-height: 60vh; /* Set a maximum height if needed to prevent excessive growth */
   background-color: black;
- border-radius: 8px;
+  text-align: center;
+  border-radius: 8px;
   backdrop-filter: opacity(0.8);
   opacity: 0.6;
   margin: 0 auto;
   position: relative;
-
+  padding: 16px;
   justify-content: center;
   align-items: center;
 }
 
+.advertise p {
+  /* Optional: Style for text content */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
 .subhead1{
   display: flex;
   font-size: 42px;
+  text-align: center;
   justify-content: center;
 
 }
@@ -1064,6 +1087,7 @@ body {
   display: flex;
   text-align: center;
   font-size: 30px;
+  text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -1308,12 +1332,12 @@ body {
   bottom: 10vh;
   z-index: 5;
   background-color: white;
-  width: 50%;
+  width: 68%;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   border-radius: 10px;
   padding: 10px;
   display: flex;
-  height: 20vh;
+  height: 23vh;
   flex-direction: column;
   margin: auto;
 }
@@ -1376,6 +1400,7 @@ body {
   justify-content: space-between;
   padding: 0 20px;
   height: 100px;
+  margin-top: 5px;
   /* UI Properties */
   background: var(--card-color-ffffff) 0% 0% no-repeat padding-box;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -2750,8 +2775,8 @@ div#article_card_footer .article_footer_text p {
 
 }
 .footer_logo{
-  width: 182px;
-  height: 60px;
+  width: 142px;
+  height: 90px;
   
   filter: brightness(0) invert(1);
  }
