@@ -6,6 +6,14 @@ import { toast } from "react-hot-toast";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import Image from "next/image";
+import Logo from "../../assets/Logo_Color.png";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { MdOutlineCall } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
+import { BsThreeDotsVertical } from "react-icons/bs";
+
+
 
 const HorizontalCard = ({ ele }) => {
     const priceSymbol = useSelector(settingsData);
@@ -82,22 +90,29 @@ const HorizontalCard = ({ ele }) => {
                         )}
                     </span>
                     <span className="prop_sell">{ele.propery_type}</span>
-                    <span className="prop_price">
+                    {/* <span className="prop_price">
                         {CurrencySymbol} {ele.price}
-                    </span>
+                    </span> */}
 
-                    <div>
+                    <div className="card-headerr">
                         <div className="prop_card_mainbody">
                             <div className="cate_image">
-                                <Image loading="lazy" src={ele.category.image} alt="" width={20} height={20} />
+                                <Image loading="lazy" src={ele.category.image} alt="" width={20} height={18} />
                             </div>
-                            <span className="body_title"> {ele.category.category} </span>
+                            <span className="body_title"> 
+                            {ele.category.category}
+                            <Image loading="lazy" src={Logo.src} alt="Logo" className="loogo" width={0} height={26} style={{ width: "60px", height:"50px" }} />
+
+                              </span>
                         </div>
+
+                        <div className="symprice">
+                        {CurrencySymbol} {ele.price}
+                        </div>
+                       
                         <div id="prop_card_middletext">
                             <span>{ele.title}</span>
-                            <p>
-                                {ele.city} {ele.city ? "," : null} {ele.state} {ele.state ? "," : null} {ele.country}
-                            </p>
+                           
                         </div>
                     </div>
                     <div className="card-footer" id="prop_card_footer">
@@ -105,18 +120,36 @@ const HorizontalCard = ({ ele }) => {
                             {ele.parameters &&
                                 ele.parameters.slice(0, 4).map((elem, index) => (
                                     <div className="col-sm-12 col-md-6" key={index}>
+                                <p className="logcity">
+                                  <FaMapMarkerAlt className="mapp" />  {ele.city} {ele.city ? "," : null} {ele.state} {ele.state ? "," : null} {ele.country}
+                                </p>
                                         <div id="footer_content" key={index}>
                                             <div>
                                                 <Image loading="lazy" src={elem.image} alt="" width={20} height={20} />
                                             </div>
                                             <p className="text_footer"> {elem.name}</p>
                                         </div>
+
                                     </div>
                                 ))}
+                                
                         </div>
+                        <div className="desccall">
+                            <div className="contactdes">
+                                <p className="cont"><MdOutlineCall className="logov" />Call</p>
+                                <p className="cont"><MdOutlineEmail className="logov"  />Email</p>
+                                <p className="cont"><IoLogoWhatsapp className="logov"  />Whatsapp</p>
+                                <p className="cont"><AiOutlineHeart size={18} /></p>
+                                <p className="cont"><BsThreeDotsVertical size={18} /></p>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </div>
+
             </div>
+            
         </div>
     );
 };

@@ -19,6 +19,7 @@ import { store } from "@/store/store";
 import Swal from "sweetalert2";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import PhoneInput from "react-phone-number-input";
 import { silderCacheData } from "@/store/reducer/momentSlice";
 
 const Nav = () => {
@@ -153,6 +154,8 @@ const Nav = () => {
         });
     };
 
+    const [value, setValue] = useState();
+
     return (
         <>
             <header>
@@ -218,6 +221,7 @@ const Nav = () => {
                                         <span className="langdrop">
                                         <Dropdown.Toggle id="dropdown-basic">{selectedLanguage ? selectedLanguage : "Language"}</Dropdown.Toggle>
                                         <Dropdown.Menu id="language">
+
                                             {LanguageList &&
                                                 LanguageList.map((ele, index) => (
                                                     <Dropdown.Item key={index} onClick={() => handleLanguageChange(ele.code)}>

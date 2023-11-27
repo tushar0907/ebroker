@@ -89,9 +89,9 @@ const SimilerPropertySlider = () => {
         <div div id="similer-properties">
             <div className="similer-headline">
                 <span className="headline">
-                    Similar{" "}
+                    Recommended
                     <span>
-                        <span className="highlight"> Properties</span>
+                        <span className="highlight"> for you</span>
                     </span>
                 </span>
             </div>

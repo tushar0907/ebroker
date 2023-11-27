@@ -291,10 +291,11 @@ const HomePage = () => {
                 slidingDuration: 400,
                 slidingDelay: 100,
                 shouldAutoplay: true,
-                shouldDisplayButtons: true,
+                shouldDisplayButtons: false,
                 autoplayDuration: 3000,
                 height: "100vh",
               }}
+              className="hide-buttons"
             >
               {isLoading ? (
                 <Loader />

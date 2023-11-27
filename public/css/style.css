@@ -8,6 +8,7 @@
   --primary-font: "Manrope", sans-serif;
   --primary-background: #f4f5f4;
 }
+
 body {
   background-color: var(--primary-background) !important;
   overflow-x: hidden;
@@ -547,7 +548,7 @@ body {
   border: none;
   /* width: 30%; */
   color: var(--primary-text-color01);
-  background-color: #282F39;
+  background-color: var(--primary-text-color01) !important;
   padding: 10px 30px;
   border-radius: 8px;
 }
@@ -952,17 +953,22 @@ body {
   cursor: pointer;
 }
 
+
 .setup{
   display: flex;
   width: 100%;
   height: 4vh;
+  color: white;
   justify-content: center;
   align-items: center;
+  background-color: #462155;
   border: 1px solid rgb(205, 198, 198);
   border-radius: 5px;
   font-size: medium;
   padding: 7px;
 }
+
+
 
 .is-sticky .nav-item,
 .is-sticky .nav-link {
@@ -1221,12 +1227,15 @@ body {
 .icon01 {
   margin-right: 10px;
 }
+
 .playbutton {
   color: var(--primary-text-color01);
   border-radius: 50%;
   background: #ffffff14;
   border: none;
 }
+
+
 .playbutton {
   text-decoration: none;
   color: var(--primary-text-color01) !important;
@@ -1237,6 +1246,7 @@ body {
   animation: 2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
   cursor: pointer;
 }
+
 
 .searchone{
   display: flex;
@@ -1249,9 +1259,9 @@ body {
   display:flex;
   flex-direction: row;
   padding: 10px;
-  height: 4vh;
-  width: 50%;
-  justify-content: flex-end;
+  height: 6vh;
+  width: 65%;
+  justify-content: flex-start;
   padding-left: 3px;
   padding-right: 3px;
   align-items: center;
@@ -1296,7 +1306,9 @@ body {
   border-radius: 10px;
   margin-left: 5px;
   margin-right: 5px;
-  width: 25%;
+  width: 20%;
+  top: 2px;
+  height: 47px;
   background-color: #462155;
   font-weight: 600;
   justify-content: center;
@@ -1307,10 +1319,12 @@ body {
 .tag3{
   display: flex;
   height: 3.5vh;
+  height: 47px;
+  top: 2px;
   border-radius: 10px;
   margin-left: 5px;
   margin-right: 5px;
-  width: 35%;
+  width: 30%;
   background-color: #462155;
   font-weight: 600;
   justify-content: center;
@@ -1332,12 +1346,12 @@ body {
   bottom: 10vh;
   z-index: 5;
   background-color: white;
-  width: 68%;
+  width: 72%;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   border-radius: 10px;
   padding: 10px;
   display: flex;
-  height: 23vh;
+  height: 24vh;
   flex-direction: column;
   margin: auto;
 }
@@ -1376,7 +1390,61 @@ body {
 
 #searchbox #tabs #rentbutton {
   border: 1px solid rgb(174, 172, 172);
+  color: var(--primary-text-color02);
+  position: relative;
+  top: 2px;
+  width: 152px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  justify-content: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 0px 0px;
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+}
 
+#airbutton{
+  border: 1px solid rgb(174, 172, 172);
+  color: var(--primary-text-color02);
+  position: relative;
+  top: 2px;
+  width: 152px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  justify-content: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 0px 0px;
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+
+}
+
+#offpln{
+    border: 1px solid rgb(174, 172, 172);
+    color: var(--primary-text-color02);
+    position: relative;
+    top: 2px;
+    width: 152px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    justify-content: center;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#cmcrlbutton{
+  border: 1px solid rgb(174, 172, 172);
   color: var(--primary-text-color02);
   position: relative;
   top: 2px;
@@ -1391,7 +1459,9 @@ body {
   opacity: 1;
   z-index: 1;
   cursor: pointer;
+
 }
+
 .card {
   border-radius: none;
 }
@@ -1469,6 +1539,10 @@ body {
 .nav-link{
   display: flex;
   background-color: blue;
+}
+
+.login-reg{
+  background-color: red;
 }
 
 .tab-active {
@@ -1878,6 +1952,7 @@ margin-left: 4px;
   width: 100%;
   background-color: var(--primary-text-color01);
   border-radius: 12px;
+
 }
 .horizontal_card #main_prop_card_body .prop_feature {
   background: var(--primary-color);
@@ -1902,6 +1977,44 @@ margin-left: 4px;
   width: 60px;
   left: 10px;
   margin-top: 210px;
+}
+
+.desccall{
+  width: 100%;
+  padding-top: 70px;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.contactdes{
+  display: flex;
+  width: 80%;
+  align-items: end;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.logov{
+  display: flex;
+  margin-right: 3px;
+  margin-left: 1px
+}
+
+.cont{
+  display: flex;
+  padding: 3px;
+  align-items:center;
+  justify-content: space-around;
+  padding-left: 7px;
+  padding-right: 7px;
+  height: 3.8vh;
+  font-weight: 700;
+  font-size: 15px;
+  color: #462155;
+  border: 1px solid #462155;
+  border-radius: 5px
 }
 
 .rateOut{
@@ -1964,7 +2077,20 @@ margin-left: 4px;
   flex-direction: column;
   display: flex;
   gap: 10px;
+  height: 5vh;
+  justify-content: start;
 }
+
+.symprice{
+  display: flex;
+  height: 3vh;
+  align-items: center;
+  font-weight: 500;
+  padding-left: 4px;
+  font-size: 18px;
+}
+
+
 .horizontal_card #main_prop_card_body div#prop_card_middletext p {
   font-weight: 400;
   letter-spacing: 0px;
@@ -2336,15 +2462,13 @@ margin-left: 4px;
   /* margin-left: -392px; */
 }
 .prop_price {
-  position: absolute;
   /* top: 85%; */
   /* right: 53%; */
   font-weight: 500;
   letter-spacing: 0px;
   color: var(--primary-text-color01);
   opacity: 1;
-  margin-left: -100px;
-  margin-top: 220px;
+  background-color:red
 }
 
 #prop_card_mainbody {
@@ -2357,7 +2481,34 @@ margin-left: 4px;
   color: var(--primary-color);
 }
 .body_title {
-  font-size: 18px;
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  height: 3vh;
+  justify-content: space-between;
+  align-items: center;
+  color: #282f39c2;
+
+}
+
+.logcity{
+  display: flex;
+  width: 110%;
+  margin-left: 2px;
+  align-items: center;
+}
+
+.mapp{
+  display: flex;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.cate_image{
+  display: flex;
+  height: 3vh;
+  align-items: center;
+  color: #282f39c2;
 }
 
 /* #skeleton_card_footer {
@@ -2760,11 +2911,11 @@ div#article_card_footer .article_footer_text p {
 /* ========================================= FOOTER CSS ============================== */
 
 #footer {
-  background-color: #282f39;
+  background-color: #e2e3e7;
   display:flex;
   flex-direction: column;
   height: fit-content;
-  color: white;
+  color: black;
 }
 #footer_logo_section {
   display: flex;
@@ -2778,14 +2929,14 @@ div#article_card_footer .article_footer_text p {
   width: 142px;
   height: 90px;
   
-  filter: brightness(0) invert(1);
+  
  }
 #footer_deatils {
   gap: 20px 0;
 }
 #footer a {
   font-size: 14px;
-  color: #ffffffc2;
+  color: black;
 }
 .footer_contact_us {
   display: flex;
@@ -2821,7 +2972,7 @@ div#article_card_footer .article_footer_text p {
 }
 .prop_links {
   font-size: 16px;
-  color: #ffffffc2;
+  color: black;
   cursor: pointer;
 }
 .prop_links:hover {
@@ -2840,7 +2991,7 @@ div#article_card_footer .article_footer_text p {
 }
 .page_links {
   font-size: 16px;
-  color: #ffffffc2;
+  color: black;
   cursor: pointer;
 }
 .page_links:hover {
@@ -2853,7 +3004,7 @@ div#article_card_footer .article_footer_text p {
 }
 .download_app_desc {
   /* margin-top: 15px; */
-  color: #ffffffc2;
+  color: #000;
 }
 .download_app_platforms {
   display: flex;
@@ -2877,8 +3028,9 @@ div#article_card_footer .article_footer_text p {
   font-size: 14px;
 }
 .footer_span {
-  color: #ffffffc2;
+  color: #000;
 }
+
 .span_title {
   font-size: 26px;
   font-weight: 600;
@@ -3543,6 +3695,66 @@ option {
   justify-content: center;
   color: white;
 }
+
+.detailshare{
+  display: flex;
+  height: 4vh;
+  justify-content: end;
+  width: 100%;
+}
+
+.contentt {
+  display: flex;
+  align-items: start;
+  padding-top: 6px;
+  height: 10vh;
+  gap: 10px;
+  justify-content: end;
+  color: white;
+}
+
+.logoo{
+  margin-right: 4px
+}
+
+.currentname{
+  display: flex;
+}
+
+.propcont{
+  display: flex;
+  justify-content: space-between;
+}
+
+.memail{
+  display: flex;
+  padding: 5px;
+  padding-left: 12px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 12px;
+  border: 1px solid darkgreen;
+  color: white;
+  background-color: darkgreen;
+  border-radius: 5px;
+}
+
+.saveh{
+  display: flex;
+  border: 1px solid blue;
+  padding: 6px;
+  color: blue;
+  align-items: center;
+  margin-right: 8px;
+  font-weight: 500;
+  justify-content: space-around;
+  border-radius: 6px;
+  padding-left: 12px;
+  padding-right: 12px
+}
+
+
+
 .right-side-content span {
   font-size: 35px;
   font-weight: 600;
@@ -3809,11 +4021,31 @@ option {
   align-items: center;
   gap: 10%;
 }
+
+#detailcrumb-content{
+  display: flex;
+  width: 100%;
+  height: 6vh;
+  margin-top: 10px;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.currenname{
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+}
+
 #specification {
   display: flex;
   gap: 20px;
-  width: 100%;
-  justify-content: start;
+  flex-direction: column;
+  width: 50%;
+  height: 12vh;
+  border-radius: 5px;
+  background: rgb(240, 239, 239);
+  justify-content: center;
   align-items: center;
 }
 .spec-icon {
@@ -3855,8 +4087,8 @@ option {
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  font-size: medium;
-  font-weight: 400;
+  font-size: smaller;
+  font-weight: 600;
   color: #282f39;
   width: 30% !important;
 }
@@ -3866,11 +4098,31 @@ option {
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  font-size: medium;
-  font-weight: 400;
+  font-size: smaller;
+  font-weight: 500;
   color: #282f39;
   width: 70% !important;
 }
+
+.rvw{
+  display: flex;
+  width: 100%;
+}
+
+.writerev{
+  display: flex;
+  border: 1px solid black;
+  height: 3.5vh;
+  font-weight: 500;
+  margin-left: 10px;
+  padding-left: 14px;
+  align-items: center;
+  padding-right: 14px;
+  border-radius: 3px;
+  justify-content: center;
+  border: 1px solid black;
+}
+
 .adrs_value {
   color: #282f39c2;
 }

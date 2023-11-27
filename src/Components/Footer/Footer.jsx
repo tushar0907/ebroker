@@ -12,7 +12,6 @@ import { settingsData } from "@/store/reducer/settingsSlice";
 import { translate } from "@/utils";
 import { FaYoutube } from "react-icons/fa";
 
-
 import Image from "next/image";
 
 const Footer = () => {
@@ -44,7 +43,7 @@ const Footer = () => {
                     <span className="footer_span">{translate("email")}</span>
                     <a href={`mailto:${webdata && webdata.company_email}`}>
                       <span className="footer_span_value">
-                      admin@propertichecker.com
+                        admin@propertichecker.com
                       </span>
                     </a>
                   </div>
@@ -54,12 +53,9 @@ const Footer = () => {
                     <FiPhone size={25} />
                   </div>
                   <div className="footer_contactus_deatils">
-                    <span className="footer_span">
-                        Call/WhatsApp
-                    </span>
+                    <span className="footer_span">Call/WhatsApp</span>
                     <a href={`tel:${webdata && webdata.company_tel1}`}>
-                      <span className="footer_span_value">
-                      +16892782043                      </span>
+                      <span className="footer_span_value">+16892782043 </span>
                     </a>
                   </div>
                 </div>
