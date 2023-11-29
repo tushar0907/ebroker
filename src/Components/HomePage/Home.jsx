@@ -287,11 +287,13 @@ const HomePage = () => {
               onAfterChange={(nextSlide) =>
                 console.log("onAfterChange", nextSlide)
               }
+              
+              shouldDisplayButtons={false}
               settings={{
                 slidingDuration: 400,
                 slidingDelay: 100,
                 shouldAutoplay: true,
-                shouldDisplayButtons: false,
+                shouldDisplayButtons: false, // This should hide the buttons
                 autoplayDuration: 3000,
                 height: "100vh",
               }}

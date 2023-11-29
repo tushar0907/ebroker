@@ -74,7 +74,7 @@ const HorizontalCard = ({ ele }) => {
     return (
         <div className="horizontal_card">
             <div className="card" id="main_prop_card">
-                <div className="image_div col-md-4">
+                <div className="image_div col-md-5">
                     <Image loading="lazy" className="card-img" id="prop_card_img" src={ele.title_image ? ele.title_image : PlaceHolderImg} width={20} height={20} />
                 </div>
 
