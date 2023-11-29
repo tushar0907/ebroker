@@ -554,7 +554,7 @@ const PropertieDeatils = () => {
                                 Call
                               </div>
                               {/* <div className="deatilss">
-                                                            <span className="o-d"> {translate("mail")}</span>
+                                                            <span className="o-d">> {translate("mail")}</span>
                                                             <span className="value">{getPropData && getPropData.email}</span>
                                                         </div> */}
                             </div>
