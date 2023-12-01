@@ -669,6 +669,21 @@
     display: none;
   }
 
+  #prop-left-images {
+    display: flex;
+    height:30vh;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #prop-right-images {
+    display: flex;
+    height:30vh;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10vh;
+  }
+
   #searchcard {
     flex-direction: column;
     justify-content: center;
@@ -1460,6 +1475,7 @@
 
   #prop-main-image {
     width: 100%;
+    height: 40vh;
   }
 
   .right-imgs01 {
@@ -1542,6 +1558,7 @@
 
   #prop-main-image {
     width: 100%;
+    height: 40vh;
   }
 
   .right-imgs01 {

@@ -228,14 +228,14 @@ const PropertieDeatils = () => {
                           className="col-lg-8 col-sm-12 text-center"
                           id="prop-main-image"
                         >
-                          <Image
+                          {/* <Image
                             loading="lazy"
                             src={galleryPhotos[0]?.image_url || PlaceHolderImg}
                             className="middle-img"
                             alt="Main Image"
                             width={200}
-                            height={200}
-                          />
+                            height={100}
+                          /> */}
                           <div className="see_all">
                             <button
                               onClick={(e) => openLightbox(e, { index: 0 })}
@@ -299,7 +299,7 @@ const PropertieDeatils = () => {
                     {getPropData && getPropData.description ? (
                       <div className="card about-propertie">
                         <div className="card-header">
-                          {translate("aboutProp")}yo{" "}
+                          {/* {translate("aboutProp")}{" "} */}About Property
                         </div>
                         <div className="card-body">
                           {getPropData && getPropData.description && (

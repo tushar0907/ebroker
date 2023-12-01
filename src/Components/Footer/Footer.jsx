@@ -138,7 +138,7 @@ const Footer = () => {
                           className="platforms_imgs"
                           width={0}
                           height={0}
-                          style={{ width: "100%", height: "60%" }}
+                          style={{ width: "80%", height: "70%" }}
                         />
                       </a>
                     </div>
@@ -156,7 +156,7 @@ const Footer = () => {
                           className="platforms_imgs"
                           width={0}
                           height={0}
-                          style={{ width: "100%", height: "60%" }}
+                          style={{ width: "80%", height: "70%" }}
                         />
                       </a>
                     </div>

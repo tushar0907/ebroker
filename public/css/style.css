@@ -1772,7 +1772,7 @@ button.learn-more .button-text {
 }
 .verticle_card .verticle_main_card #verticle_card_img {
   border-radius: 12px 12px 0 0;
-  height: 25vh;
+  height: 29vh;
   object-fit: cover;
   position: relative;
   z-index: -1;
@@ -1993,7 +1993,7 @@ margin-left: 4px;
 
 .contactdes{
   display: flex;
-  width: 80%;
+  width: 100%;
   align-items: end;
   height: 100%;
   justify-content: space-around;
@@ -2930,10 +2930,8 @@ div#article_card_footer .article_footer_text p {
 
 }
 .footer_logo{
-  width: 142px;
-  height: 90px;
-  
-  
+  width: 118px;
+  height: 75px;
  }
 #footer_deatils {
   gap: 20px 0;
@@ -3789,11 +3787,13 @@ option {
 }
 #prop-left-images {
   display: flex;
+  height:80vh;
   flex-direction: column;
   gap: 20px;
 }
 #prop-right-images {
   display: flex;
+  height:80vh;
   flex-direction: column;
   gap: 20px;
 }
@@ -3854,6 +3854,7 @@ option {
 }
 #prop-main-image {
   position: relative;
+  height: 80vh;
 }
 .see_all button {
   border: none;
