@@ -228,14 +228,14 @@ const PropertieDeatils = () => {
                           className="col-lg-8 col-sm-12 text-center"
                           id="prop-main-image"
                         >
-                          {/* <Image
+                          <Image
                             loading="lazy"
                             src={galleryPhotos[0]?.image_url || PlaceHolderImg}
                             className="middle-img"
                             alt="Main Image"
                             width={200}
-                            height={100}
-                          /> */}
+                            height={200}
+                          />
                           <div className="see_all">
                             <button
                               onClick={(e) => openLightbox(e, { index: 0 })}
