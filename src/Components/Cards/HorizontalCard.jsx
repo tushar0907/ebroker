@@ -89,7 +89,10 @@ const HorizontalCard = ({ ele }) => {
                             <AiOutlineHeart size={25} onClick={handleLike} />
                         )}
                     </span>
-                    <span className="prop_sell">{ele.propery_type}</span>
+                    <div className="symprice">
+                        {CurrencySymbol} {ele.price}
+                        </div>
+                   
                     {/* <span className="prop_price">
                         {CurrencySymbol} {ele.price}
                     </span> */}
@@ -101,14 +104,12 @@ const HorizontalCard = ({ ele }) => {
                             </div>
                             <span className="body_title"> 
                             {ele.category.category}
-                            <Image loading="lazy" src={Logo.src} alt="Logo" className="loogo" width={0} height={26} style={{ width: "60px", height:"50px" }} />
+                            <Image loading="lazy" src={Logo.src} alt="Logo" className="loogo" width={0} height={26} style={{ width: "65px", height:"50px" }} />
 
                               </span>
                         </div>
 
-                        <div className="symprice">
-                        {CurrencySymbol} {ele.price}
-                        </div>
+                        <span className="prop_sell">{ele.propery_type}</span>
                        
                         <div id="prop_card_middletext">
                             <span>{ele.title}</span>
@@ -116,10 +117,10 @@ const HorizontalCard = ({ ele }) => {
                         </div>
                     </div>
                     <div className="card-footer" id="prop_card_footer">
-                        <div className="row">
+                        <div className="mainpos">
                             {ele.parameters &&
                                 ele.parameters.slice(0, 4).map((elem, index) => (
-                                    <div className="col-sm-12 col-md-6" key={index}>
+                                    <div className="" key={index}>
                                 <p className="logcity">
                                   <FaMapMarkerAlt className="mapp" />  {ele.city} {ele.city ? "," : null} {ele.state} {ele.state ? "," : null} {ele.country}
                                 </p>

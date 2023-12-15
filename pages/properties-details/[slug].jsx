@@ -277,7 +277,13 @@ const PropertieDeatils = () => {
                   onClose={closeLightbox}
                 />
 
-                <Detailcrumb
+               
+                <div className="row" id="prop-all-deatils-cards">
+                  <div
+                    className="col-12 col-md-12 col-lg-9"
+                    id="prop-deatls-card"
+                  >
+                     <Detailcrumb
                   data={{
                     type: getPropData && getPropData.category.category,
                     title: getPropData && getPropData.title,
@@ -291,11 +297,6 @@ const PropertieDeatils = () => {
                   }}
                 />
 
-                <div className="row" id="prop-all-deatils-cards">
-                  <div
-                    className="col-12 col-md-12 col-lg-9"
-                    id="prop-deatls-card"
-                  >
                     {getPropData && getPropData.description ? (
                       <div className="card about-propertie">
                         <div className="card-header">

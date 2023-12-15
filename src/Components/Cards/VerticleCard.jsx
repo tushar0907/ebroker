@@ -102,7 +102,7 @@ function VerticalCard({ ele, onRemoveCard }) {
                         {CurrencySymbol} {ele.price}
                     </span>
                     <div className="feature_card_mainbody">
-                        <div className="cate_image">
+                        <div className="cate_imagee">
                             <Image loading="lazy" src={ele.category && ele.category.image} alt="" width={20} height={20} />
                         </div>
                         <span className="feature_body_title"> {ele.category && ele.category.category} </span>
@@ -113,7 +113,7 @@ function VerticalCard({ ele, onRemoveCard }) {
                     </div>
                     <div className="feature_card_middletext">
                         <span>{ele.title}</span>
-                        <p>
+                        <p className="cityt">
                             {ele.city} {ele.city ? "," : null} {ele.state} {ele.state ? "," : null} {ele.country}
                         </p>
                      
@@ -137,7 +137,7 @@ function VerticalCard({ ele, onRemoveCard }) {
                                             <Image loading="lazy" src={elem.image} alt="" width={20} height={16} />
                                         </div>
                                         <p className="text_footer"> {elem.name}
-                                        <span className="bedno">3</span>
+                                        {/* <span className="bedno">3</span> */}
                                         </p>
                                     </div>
                                 </div>
